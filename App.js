@@ -3,12 +3,8 @@ import { View } from 'react-native';
 import firebase from 'firebase';
 
 import config from './src/config';
-import Header from './src/components/Header';
+import { Header, Spinner, Button, Card, CardSection } from './src/components/common';
 import LoginForm from './src/components/LoginForm';
-import Spinner from './src/components/Spinner';
-import Button from './src/components/Button';
-import Card from './src/components/Card';
-import CardSection from './src/components/CardSection';
 
 class App extends Component {
   state = {
