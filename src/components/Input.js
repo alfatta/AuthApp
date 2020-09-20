@@ -27,11 +27,19 @@ const style = StyleSheet.create({
 
 class Input extends Component {
   render() {
-    const { label, placeholder, secureTextEntry } = this.props
+    const {
+      label,
+      placeholder,
+      secureTextEntry,
+      value,
+      onChangeText,
+    } = this.props
     return (
       <View style={ style.container }>
         <Text style={ style.label }>{ label }</Text>
         <TextInput
+          value={ value }
+          onChangeText={ onChangeText }
           style={ style.input }
           placeholder={ placeholder }
           secureTextEntry={ secureTextEntry }
